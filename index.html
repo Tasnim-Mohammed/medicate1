@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>project3</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light h6 fixed-top fw-bolder p-0 m-0   " style="height: 65px; border-radius: 5px;">
+    <div class="container-fluid">
+      <img src="images/medicate_int_tpa_logo.jfif" class="shadow bg-body rounded-circle me-3 ms-3 " style="width: 55px; height: 55px;" alt="">
+      <a class="navbar-brand text-light border border-start-0 border-bottom-0 border-top-0 pe-3" href="#">Medicate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active  text-light ms-2" style="letter-spacing: 1.5px;" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light ms-2" style="letter-spacing: 1.5px;" href="#">Investors</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ms-2 btn btn-light rounded p-1  col-2 col-lg-11" style="letter-spacing: 1.5px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cards
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Company Facts</a></li>
+                <li><a class="dropdown-item" href="#">Stock information</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Financial information</a></li>
+                <li><a class="dropdown-item" href="#">Annual Report</a></li>
+                <li><a class="dropdown-item" href="#">Health care Programs</a></li>
+                <li><a class="dropdown-item" href="#">Online Doctors</a></li>
+                <li><a class="dropdown-item" href="#">More...</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light ms-2" style="letter-spacing: 1.5px; " href="#" >Our services</a>
+          </li>
+        </ul>
+        <form class="d-flex my-auto">
+          <input class="form-control me-2 border-0" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-secondary  border-0" type="submit">Search</button>
+          <button class="btn btn-secondary  border-0 ms-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" >Login</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+    <div class="modal fade rounded-2 " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-header text-light" style="background-color: #04d4bc;">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+              <div class="mb-3">
+                  <label for="formGroupExampleInput" class="form-label">Email address</label>
+                  <input type="text" class="form-control " style="border:1px solid #04d4bc; "  id="formGroupExampleInput" >
+                  <p class="text-secondary pt-3"><small> We will never share your email with anyone else.</small></p>
+                </div>
+                <div class="mb-3">
+                  <label for="formGroupExampleInput2" class="form-label">Password</label>
+                  <input type="text" class="form-control" style="border:1px solid #04d4bc; "  id="formGroupExampleInput2" >
+                </div>
+                <div class="form-check form-switch ms-5">
+                  <input class="form-check-input" style="background-color: #c8fff9;" type="checkbox" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label"  style="color: #04d4bc;"  for="flexSwitchCheckChecked">Remember me</label>
+                </div>
+          </div><!--modal body-->
+          <div class=" modal-footer m-auto " style="width: 90%;">
+            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Login</button>
+            <button type="button" class="btn" style="background-color: #04d4bc;">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/لقطة شاشة 2024-10-26 181304.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption  mx-auto  d-md-block pt-lg-5 pt-sm-3 ">
+            <h5>Medicate</h5>
+            <p>Take control of your healthy life.</p>
+            <button class="btn btn btn-primary border-0 ">contact us</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/img14c560b7c87f67e8d4c76287dc00992c4.png.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption  mx-auto  d-md-block pt-lg-5 pt-sm-3 ">
+            <h5>Medicate</h5>
+            <p>You can count on us for good services.</p>
+            <button class="btn btn btn-primary border-0 ">contact us</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/d64181b934880d95be95b474b8c9284f.png.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption mx-auto  d-md-block pt-lg-5 pt-sm-3 ">
+            <h5>Medicate</h5>
+            <p>Inspiring you to better health.</p>
+            <button class="btn btn btn-primary border-0 ">contact us</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/7d9bccad37a9ceb6dbe07e81c549cb33.png.webp" class="d-block  w-100" alt="...">
+          <div class="carousel-caption  mx-auto  d-md-block pt-lg-5 pt-sm-3">
+            <h5>Medicate</h5>
+            <p>Better doctors, better care.</p>
+            <button class="btn btn btn-primary border-0 ">contact us</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+  <div class="icons">
+    <a href="#" class="text-center d-block text-light rounded-2 mb-3 " style="width: 40px; height: 40px; background-color: #04d4bc;"><i class="fab fa-facebook-f "></i> </a>
+    <a href="#" class="text-center d-block text-light rounded-2 mb-3" style="width: 40px; height: 40px; background-color: #04d4bc;"> <i class="fab fa-whatsapp "></i></a>
+    <a href="#" class="text-center d-block text-light rounded-2 mb-3" style="width: 40px; height: 40px; background-color: #04d4bc;"><i class="fab fa-twitter "></i></a>
+    <a href="#" class="text-center d-block text-light rounded-2 mb-3" style="width: 40px; height: 40px; background-color: #04d4bc;"><i class="fab fa-linkedin-in "></i></a>
+    <a href="#" class="text-center d-block text-light rounded-2 mb-3" style="width: 40px; height: 40px; background-color: #04d4bc;"><i class="fab fa-instagram "></i></a>
+  </div><!--/icons-->
+  
+  <div class="container-fluid p-3 rounded-bottom shadow" style="background-color: #f4f8f8;">
+    <h2 class="fs-4" style="color: #03b8a3;">Medicate is always with you</h2>
+    <p>At Medkit, we are committed to putting our customers at the heart of everything we do. We pride ourselves on serving our valued customers with the highest standards of integrity and transparency, and we are keen to communicate with them permanently and effectively.</p>
+    <button class="btn btn-outline-primary">more..</button>
+  </div>
+  
+<hr class="mt-4 mb-4">
+  
+  <div class="container-fluid  rounded-3 " >
+    <div class="w-100 text-light text-center rounded-3 pt-4 pb-4" style="height: 77px; background-color: #03b8a3;">
+      <h2 class="fs-4" >What you will find in Medicate</h2>
+    </div>
+    <div class="accordion mt-3" id="accordionExample">
+      <div class="accordion-item ">
+        <h2 class="accordion-header shadow" id="headingOne">
+          <button class="accordion-button rounded-bottom shadow " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Health Expense Management
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body"  style="background-color: #f4f8f8;">
+            <p class="fs-6">Based on our deep understanding of the healthcare sector, our services are designed to meet the needs of our clients and we continue to update our services to accommodate all the changes taking place around us. Healthcare management pays attention to making our team of professionals well equipped and trained to perform and satisfy our clients and provide excellent personalized care.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item ">
+        <h2 class="accordion-header shadow" id="headingTwo">
+          <button class="accordion-button collapsed rounded-bottom shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Medical Network
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body "style="background-color: #f4f8f8; ">
+            <p class="fs-6">Service providers include hospitals, clinics, dental clinics, pharmacies, physiotherapy centers, optics, audiology, medical imaging, and laboratories. Determining the type of disease, the required specialty, and the level of medical and scientific expertise.</p> 
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header shadow" id="headingThree">
+          <button class="accordion-button collapsed rounded-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Urgent services
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body"  style="background-color: #f4f8f8;">
+            <p class="fs-6">Our medical team is always at your service from 9 am to 9 pm to provide the best level of services you deserve. Please contact us on the toll-free number 0910015555</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+<hr class="mt-4 mb-4"> 
+
+<div class="container-fluid  rounded-3 ">
+  <div class="w-100 text-light text-center rounded-3 pe-1 ps-1 pb-4 pt-4" style="height: 77px; background-color: #03b8a3;">
+    <h2 class="fs-4 m-0" >We welcome your inquiries and comments.</h2>
+  </div>
+  <div class="rounded-3 p-4 " style="background-color: #e8eeee;">
+   <h2 class=" mb-3" style="font-size: 19px;">write your comment <code>Press Here</code></h2>
+
+  
+   <button   id="button"  type="button"  class="btn btn-outline-primary button">
+    send <span class="tooltiptext">send to clipboard</span>
+   </button>
+   
+   <textarea class="border-0 p-2 d-block mt-3 rounded-3 col-md-12 col-12" placeholder="write and send" name="" id=""  rows="8" ></textarea>
+  </div><!--content-->
+</div><!--/complain-->
+
+<hr class="mt-4 mb-4"> 
+
+<div class="container-fluid  rounded-3 ">
+  <div class="w-100 text-light text-center rounded-3 pe-1 ps-1 pb-4 pt-4" style="height: 77px; background-color: #03b8a3;">
+    <h2 class="fs-4 m-0" >What are you suffering from?</h2>
+  </div>
+  <div class="rounded-3 p-4 " style="background-color: #e8eeee;">
+    <h2 class=" mb-3" style="font-size: 19px;">write your symptoms <code>Press Here</code></h2>
+    <button id="button"  type="button"  class="btn btn-outline-primary button" >
+    send<span class="tooltiptext">send to clipboard</span>
+    </button>
+    <textarea class="border-0 p-2 d-block mt-3 rounded-3 col-md-12 col-12" placeholder="write and send" name="" id=""  rows="8" ></textarea>
+  </div><!--content-->
+</div><!--/complain-->
+
+<hr class="mt-4 mb-4"> 
+
+<div class="container-fluid  rounded-3 ">
+  <div class="w-100 text-light text-center rounded-3 pe-1 ps-1 pb-4 pt-4" style="height: 77px; background-color: #03b8a3;">
+    <h2 class="fs-4 m-0" >Book an appointment with a specific doctor.</h2>
+  </div>
+  <div class="rounded-3 p-4 " style="background-color: #e8eeee;">
+    <h2 class=" mb-3" style="font-size: 19px;">write the name of the doctor and the time <code>Press Here</code></h2>
+    <button id="button"  type="button"  class="btn btn-outline-primary button">
+     send<span class="tooltiptext">send to clipboard</span>
+    </button> 
+    <textarea class="border-0 p-2 d-block mt-3 rounded-3 col-md-12 col-12" placeholder="write and send" name="" id=""  rows="8" ></textarea>
+  </div><!--content-->
+</div><!--/complain-->
+
+<hr class="mt-4 mb-4"> 
+
+<div class="moved">
+<div class="overlay"></div>
+</div>
+
+<hr class="mt-4 mb-4"> 
+
+<div class="container-fluid">
+  <div class="w-100 text-light text-center rounded-3 pe-1 ps-1 pb-4 pt-4" style="height: 77px; background-color: #03b8a3;">
+    <h2 class="fs-4 m-0" >Common Diseases Guide</h2>
+  </div>
+
+  <div class="row justify-content-evenly">
+    <div class="card  card-d col-md-4 col-12 mt-4 rounded-5 shadow" style="width: 18rem;"  >
+      <img src="images/card 1hypertension.jpg" style="height: 250px;" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">hipertension</h5>
+        <p class="card-text d-inline lh-lg">Symptoms of the disease and its treatment...</p>
+        <a href="#" class="btn btn-primary btn-sm ms-4">Read more</a>
+      </div>
+    </div><!--/card1-->
+
+    <div class="card card-d col-md-4 col-12 mt-4 rounded-5 shadow" style="width: 18rem;" >
+      <img src="images/إدارة-مرض-السكريcard2-.jpg" class="card-img-top"  style="height: 250px;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">diabetes</h5>
+        <p class="card-text d-inline lh-lg">Symptoms of the disease and its treatment...</p>
+        <a href="#" class="btn btn-primary btn-sm ms-4">Read more</a>
+      </div>
+    </div><!--/card2-->
+
+    <div class="card card-d col-md-4 col-12 mt-4 rounded-5 shadow" style="width: 18rem;" >
+      <img src="images/card3.jpg" class="card-img-top"  style="height: 250px;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Obesity</h5>
+        <p class="card-text d-inline lh-lg">Symptoms of the disease and its treatment...</p>
+        <a href="#" class="btn btn-primary btn-sm ms-4">Read more</a>
+      </div>
+    </div><!--card3-->
+  </div><!--/row1-->
+
+  <div class="row justify-content-evenly">
+    <div class="card card-d col-md-4 col-12 mt-4 rounded-5 shadow" style="width: 18rem;"  >
+      <img src="images/card4eb9ca2980c23f6022618a22a712d8b0d.jpg" style="height: 250px;" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cardiovascular disease</h5>
+        <p class="card-text d-inline lh-lg">Symptoms of the disease and its treatment...</p>
+        <a href="#" class="btn btn-primary btn-sm ms-4">Read more</a>
+      </div>
+    </div><!--/card1-->
+
+    <div class="card card-d col-md-4 col-12 mt-4 rounded-5 shadow" style="width: 18rem;" >
+      <img src="images/card5istockphoto-1201363459-612x612.jpg" class="card-img-top"  style="height: 250px;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hematology and immunity diseases</h5>
+        <p class="card-text d-inline lh-lg">Symptoms of the disease and its treatment.</p>
+        <a href="#" class="btn btn-primary btn-sm ms-4">Read more</a>
+      </div>
+    </div><!--/card2-->
+
+    <div class="card card-d col-md-4 col-12 mt-4 rounded-5 shadow" style="width: 18rem;" >
+      <img src="images/card6gastrointestinal-diseases.jpg" class="card-img-top"  style="height: 250px;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Gastrointestinal diseases</h5>
+        <p class="card-text d-inline lh-lg">Symptoms of the disease and its treatment.</p>
+        <a href="#" class="btn btn-primary btn-sm ms-4">Read more</a>
+      </div>
+    </div><!--card3-->
+  </div><!--/row2-->
+
+  <div class="row justify-content-around">
+    <div class="card card-d col-md-4 col-12 mt-4 rounded-5 shadow" style="width: 18rem;" >
+      <img src="images/card71704446317Joint_pain_Types,_Causes,_symptoms,_and_effective_treatments.jpg" class="card-img-top"  style="height: 250px;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bone and joint pain</h5>
+        <p class="card-text d-inline lh-lg">Symptoms of the disease and its treatment.</p>
+        <a href="#" class="btn btn-primary btn-sm ms-4">Read more</a>
+      </div>
+    </div><!--/card2-->
+
+    <div class="card card-d col-md-4 col-12 mt-4 rounded-5 shadow" style="width: 18rem;" >
+      <img src="images/card8245d9b1a23d599894ca991f0ff030b41.jpg.webp" class="card-img-top"  style="height: 250px;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Eye diseases</h5>
+        <p class="card-text d-inline lh-lg">Symptoms of the disease and its treatment.</p>
+        <a href="#" class="btn btn-primary btn-sm ms-4">Read more</a>
+      </div>
+    </div><!--card3-->
+  </div><!--/row3-->
+
+</div>
+
+<hr class="mt-4 mb-4"> 
+
+<div class="moved2">
+<div class="overlay"></div>
+</div>
+
+<hr class="mt-4 mb-4"> 
+
+<div class="container-fluid">
+  <div class="w-100 text-light text-center rounded-3 pe-1 ps-1 pb-4 pt-4 mb-2 " style="height: 77px; background-color: #03b8a3;">
+    <h2 class="fs-4 m-0" >OUR DOCTORS</h2>
+  </div>
+  
+  <div class="row justify-content-evenly ">
+    <div class="card card2 col-md-4 col-12 mt-5  shadow p-0" style="width:18rem; height: 361px; border-radius:20px;">
+      <img class="card-img-top" src="images/doc1.png" style="border-radius:20px;" alt="Card image">
+      <div class="card-img-overlay overlay" style="border-radius:20px">
+        <h5 class="card-title text-light">all thanks and appreciation</h5>
+        <i class="far fa-clock text-light"> octopor,29,2024</i>
+        <div class="position-absolute bottom-0 start-0 ps-3">
+          <img src="images/doc1.jpg" style="width: 80px; height: 90px; border-radius: 50%; border:1px solid #03b8a3 !important; " > 
+          <div class="text-light">
+            <h5 class="m-0">Ahmed bin Saud</h5>
+            <p>dentist-Team Supervisor</p>
+          </div>
+        </div><!--/info-->
+      </div>
+    </div><!--/card1-->
+  
+    <div class="card card2 col-md-4 col-12 mt-5  shadow p-0" style="width:18rem; height: 361px; border-radius:20px;">
+        <img class="card-img-top" src="images/doc2.png" style="border-radius:20px;" alt="Card image">
+        <div class="card-img-overlay overlay" style="border-radius:20px">
+          <h5 class="card-title text-light">all thanks and appreciation</h5>
+          <i class="far fa-clock text-light"> octopor,29,2024</i>
+          <div class="position-absolute bottom-0 start-0 ps-3">
+            <img src="images/doc2.jpg" style="width: 80px; height: 90px; border-radius: 50%; border:1px solid #03b8a3 !important; " > 
+            <div class="text-light">
+              <h5 class="m-0">Muhammad Al-Shaqaqi</h5>
+              <p>Surgeon</p>
+            </div>
+          </div><!--/info-->
+        </div>
+    </div><!--/card2-->
+  
+    <div class="card card2 col-md-4 col-12 mt-5  shadow p-0" style="width:18rem; height: 361px; border-radius:20px;">
+          <img class="card-img-top" src="images/doc3.png" style="border-radius:20px;" alt="Card image">
+        <div class="card-img-overlay overlay" style="border-radius:20px">
+          <h5 class="card-title text-light">all thanks and appreciation</h5>
+          <i class="far fa-clock text-light"> octopor,29,2024</i>
+          <div class="position-absolute bottom-0 start-0 ps-3">
+            <img src="images/doc3.jpg" style="width: 80px; height: 90px; border-radius: 50%; border:1px solid #03b8a3 !important; " > 
+            <div class="text-light">
+              <h5 class="m-0">Ayoub Khalifa Qarqab</h5>
+              <p>dentist</p>
+            </div>
+          </div><!--/info-->    
+        </div>
+    </div><!--/card3-->
+  </div><!--/row-->
+</div>
+
+<hr class="mt-5 mb-5"> 
+
+<div class="container">
+  <h2 class="fs-4 mb-4 text-center " style="color: #00a18f;" >Medical news</h2>
+  <div class="container-fluid ">
+
+    
+  <div class="card mb-5  shadow mx-auto card-new bg1 " style="width:90%; height: 350px; border-radius: 15px;">
+    <div class="row g-0 ">
+      <div class="col-md-8 body">
+        <div class="card-body card-body-underline h-auto ">
+          <h5 class="card-title" style="color: #00a18f;">Discovering a relationship between early sleep and mental health</h5>
+          <i class="fas fa-calendar-alt "><small> octopor,29,2024</small></i>
+          <div class="underline mt-2"></div>
+          <p class="card-text pt-2">Going to bed early is an important factor for improving both mental and physical health. According to the mentioned study, individuals who sleep early experience lower levels of stress and anxiety, as well as improved focus and memory. If you're struggling with sleep or concentration, it might be helpful to try changing your sleep patterns.</p>
+          <div class="icons2 " style="margin-top:100px ;">
+            <i class="fas fa-tag me-2 d-inline-block  p-1 rounded-1" style="background-color: #00c7b0;"><small class="fw-normal"> Podcast</small></i>
+            <i class="fas fa-clock me-2 d-inline-block  p-1 rounded-1" style="background-color: #04d4bc;"><small class="fw-normal"> 55mins</small></i>
+            <i class="fas fa-play d-inline-block  p-1 rounded-1" style="background-color: #04d4bc;"><small class="fw-normal"> Play Episod</small></i>
+          </div><!--/icons2-->
+        </div>
+      </div>
+      <div class="col-md-4 news head" style="width: 300px; margin-left: auto;">
+        <img src="images/new147b0bb3a63bbc86f10529e0bda437bb9.jpg.webp" class="img-fluid " style="border-radius: 15px;height: 348px; clip-path: polygon(7% 0, 100% 0%, 100% 100%, 15% 100%);">
+      </div>
+    </div>
+  </div><!--card1-->
+
+
+
+  <div class="card mb-md-5  shadow mx-auto card-new bg2 "  style="width:90%; height: 350px; border-radius: 15px;">
+    <div class="row g-0">
+      <div class="col-md-4 news head" style="width: 300px; margin-right: auto;">
+        <img src="images/new20f2ab60eaacb6bb95229c406b9b9f121.jpg.webp" class="img-fluid " style="border-radius: 15px;height: 348px; clip-path: polygon(0 0, 93% 0, 85% 100%, 0 100%);">
+      </div>
+      <div class="col-md-8 body">
+        <div class="card-body card-body-underline h-auto ">
+          <h5 class="card-title" style="color: #00a18f;">One Injection a Month to Lower Bad Cholesterol</h5>
+          <i class="fas fa-calendar-alt "><small> octopor,29,2024</small></i>
+          <div class="underline mt-2"></div>
+          <p class="card-text pt-2">A new discovery in the field of cholesterol treatment may offer an effective solution for people with high cholesterol levels. According to the available information, a single injection each month can significantly help reduce levels of bad cholesterol (LDL).
+            If you're interested in more details about this treatment.</p>
+          <div class="icons2 " style="margin-top:100px ;">
+            <i class="fas fa-tag me-2 d-inline-block  p-1 rounded-1" style="background-color: #00c7b0;"><small class="fw-normal"> Podcast</small></i>
+            <i class="fas fa-clock me-2 d-inline-block  p-1 rounded-1" style="background-color: #04d4bc;"><small class="fw-normal"> 55mins</small></i>
+            <i class="fas fa-play d-inline-block  p-1 rounded-1" style="background-color: #04d4bc;"><small class="fw-normal"> Play Episod</small></i>
+          </div><!--/icons2-->
+        </div>
+      </div>
+    </div>
+  </div><!--card2-->
+
+
+  <div class="card mb-md-5   shadow mx-auto card-new bg1 " style="width:90%; height: 350px; border-radius: 15px;">
+    <div class="row g-0 ">
+      <div class="col-md-8 body">
+        <div class="card-body card-body-underline h-auto ">
+          <h5 class="card-title" style="color: #00a18f;">Discovering a relationship between early sleep and mental health</h5>
+          <i class="fas fa-calendar-alt "><small> octopor,29,2024</small></i>
+          <div class="underline mt-2"></div>
+          <p class="card-text pt-2">Going to bed early is an important factor for improving both mental and physical health. According to the mentioned study, individuals who sleep early experience lower levels of stress and anxiety, as well as improved focus and memory. If you're struggling with sleep or concentration, it might be helpful to try changing your sleep patterns.</p>
+          <div class="icons2 " style="margin-top:100px ;">
+            <i class="fas fa-tag me-2 d-inline-block  p-1 rounded-1" style="background-color: #00c7b0;"><small class="fw-normal"> Podcast</small></i>
+            <i class="fas fa-clock me-2 d-inline-block  p-1 rounded-1" style="background-color: #04d4bc;"><small class="fw-normal"> 55mins</small></i>
+            <i class="fas fa-play d-inline-block  p-1 rounded-1" style="background-color: #04d4bc;"><small class="fw-normal"> Play Episod</small></i>
+          </div><!--/icons2-->
+        </div>
+      </div>
+      <div class="col-md-4 news head" style="width: 300px; margin-left: auto;">
+        <img src="images/new399ffc482cdd9afb5ad54f5e85143a148.jpg.webp" class="img-fluid " style="border-radius: 15px;height: 348px; clip-path: polygon(7% 0, 100% 0%, 100% 100%, 15% 100%);">
+      </div>
+    </div>
+  </div><!--card3-->
+
+
+
+  <div class="card mb-md-5  shadow mx-auto card-new bg2 "  style="width:90%; height: 350px; border-radius: 15px;">
+    <div class="row g-0">
+      <div class="col-md-4 news head" style="width: 300px; margin-right: auto;">
+        <img src="images/new4811624bd0adaad31f0e83333ab199ecb.webp" class="img-fluid " style="border-radius: 15px; height: 348px; clip-path: polygon(0 0, 93% 0, 85% 100%, 0 100%);">
+      </div>
+      <div class="col-md-8 body">
+        <div class="card-body card-body-underline h-auto ">
+          <h5 class="card-title" style="color: #00a18f;">Eating These Foods May Delay Brain Aging</h5>
+          <i class="fas fa-calendar-alt "><small> octopor,29,2024</small></i>
+          <div class="underline mt-2"></div>
+          <p class="card-text pt-2">Approximately 1,000 older adults, aged between 60 and 100 years, underwent annual surveys over a period of 7 years, investigating the amount of certain foods consumed. The study aimed to explore the effect of consuming foods rich in flavonoids on cognitive decline associated with aging.</p>
+          <div class="icons2 " style="margin-top:100px;">
+            <i class="fas fa-tag me-2 d-inline-block  p-1 rounded-1" style="background-color: #00c7b0;"><small class="fw-normal"> Podcast</small></i>
+            <i class="fas fa-clock me-2 d-inline-block  p-1 rounded-1" style="background-color: #04d4bc;"><small class="fw-normal"> 55mins</small></i>
+            <i class="fas fa-play d-inline-block  p-1 rounded-1" style="background-color: #04d4bc;"><small class="fw-normal"> Play Episod</small></i>
+          </div><!--/icons2-->
+        </div>
+      </div>
+    </div>
+  </div><!--card4-->
+  </div> 
+</div>
+
+<hr class="mt-5 mb-5"> 
+
+
+<h2 class="fs-4 mb-4 text-center " style="color: #00a18f;" >Join us</h2>
+<div class="container d-flex  flex-md-row flex-column  justify-content-between ">
+  
+    <div class="icons3 border-2 shadow text-center pt-4 mb-3 mx-auto" style="width:200px;height: 200px; border-radius: 15px; background-color: white;">
+      <h5 class="text-capitalize mb-3">subscribe now</h5>
+      <img src="images/pngtree-twitter-social-media-icon-3d-png-image_6308424-removebg-preview.png" class="shadow mb-3" style="width: 70px;height: 70px; border-radius: 15px;">
+      <h5 class="">Go to link</h5>
+    </div><!--/1-->
+
+    <div class="icons3 border-2 shadow text-center pt-4 mb-3 mx-auto  " style="width:200px;height: 200px; border-radius: 15px; background-color: white;">
+      <h5 class="text-capitalize mb-3">subscribe now</h5>
+      <img src="images/free-whatsapp-3d-logo-download-in-png-blend-fbx-gltf-file-formats--social-media-whats-app-pack-logos-3915171.png" class="shadow mb-3" style="width: 70px;height: 70px; border-radius: 15px;">
+      <h5 class="">Go to link</h5>
+    </div><!--/2-->
+
+    <div class="icons3 border-2 shadow text-center pt-4 mb-3 mx-auto " style="width:200px;height: 200px; border-radius: 15px; background-color: white;">
+      <h5 class="text-capitalize mb-3">subscribe now</h5>
+      <img src="images/png-transparent-linkedin-communication-linkedin-corporation-corporation-3d-linkedin-3d-linkedin-logo-3d-icon-thumbnail.png" class="shadow mb-3" style="width: 70px;height: 70px; border-radius: 15px;">
+      <h5 class="">Go to link</h5>
+    </div><!--/3-->
+
+    <div class="icons3 border-2 shadow text-center pt-4 mb-3 mx-auto " style="width:200px;height: 200px; border-radius: 15px; background-color: white;">
+      <h5 class="text-capitalize mb-3">subscribe now</h5>
+      <img src="images/instaccb8029d-fa5c-459c-9b0d-b4c86327f742.png" class="shadow mb-3" style="width: 70px;height: 70px; border-radius: 15px;">
+      <h5 class="">Go to link</h5>
+    </div><!--/4-->
+ 
+</div>
+
+
+<div class="container-fluid w-100 m-0 mt-5 p-0 row" style="background-color: #04d4bc;">
+  <div class="col-md-4 col-12 text-center text-light line">
+    <hr class="mt-3 mb-3 " style=" color: white;height:3px;">
+    <div class="head mt-4 mb-4">
+      <img src="images/medicate_int_tpa_logo.jfif" class=" rounded-circle me-1 " style="width: 55px; height: 55px;box-shadow:1px 1px 10px 5px white;" alt="">
+      <span class="text-capitalize">good company</span>
+    </div>
+    <hr class="mt-3 mb-3 " style=" color: white;height:3px;">
+    <p>Tel:01266629076</p>
+    <p>Address:Egypt</p>
+    <p>Fax:000-000-000</p>
+  </div>
+
+  <div class="col-md-4 col-12 text-center text-light line">
+    <hr class="mt-3 mb-3 " style=" color: white;height:3px;">
+    <div class="head mt-4 mb-4">
+      <img src="images/medicate_int_tpa_logo.jfif" class="rounded-circle me-1 " style="width: 55px; height: 55px; box-shadow:1px 1px 10px 5px white;" alt="">
+      <span class="text-capitalize">important links</span>
+    </div>
+    <hr class="mt-3 mb-3 " style=" color: white;height:3px;">
+    <p>Visit Us</p>
+    <p>Take alook</p>
+    <p>Your health is more important</p>
+  </div>
+  
+  <div class="col-md-4 col-12 text-center text-light line">
+    <hr class="mt-3 mb-3 " style=" color: white;height:3px;">
+    <div class="head mt-4 mb-4">
+      <img src="images/medicate_int_tpa_logo.jfif" class="rounded-circle me-1  " style="width: 55px; height: 55px; box-shadow:1px 1px 10px 5px white;" alt="">
+      <span class="text-capitalize">vision</span>
+    </div>
+    <hr class="mt-3 mb-3 " style=" color: white;height:3px;">
+    <p>Services for all</p>
+    <p>Provide best services</p>
+    <p>You will be better than before</p>
+  </div>
+
+  <div class="col-12 text-center">
+    <hr class="mt-3 mb-3 " style=" color: white;height:3px;">
+    <p class="text-uppercase text-light">copyright&copy;2024 shimaahussien.good company.all rights </p>
+    <hr class="mt-3 mb-5" style=" background-color: rgb(255, 255, 255); height:3px;">
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
